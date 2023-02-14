@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Unit Converter</title>
+</head>
+<body>
+    <div class="container">
+        <h1>CSS Unit Converter</h1>
+        <p>Relative length units</p>
+        <div class="length-converter">
+            <div class="fields">
+                <div class="field">
+                    <label >Pixel:</label>
+                        <input type="number" placeholder="Px" id="inputpx" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id, this.value)">
+                </div>
+                
+                <div class="field">
+                    <label >Rem:</label>
+                        <input type="number" placeholder="rem" id="inputRem" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id, this.value)">
+                </div>
+                
+                <div class="field">
+                    <label >Em:</label>
+                        <input type="number" placeholder="em" id="inputEm" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id, this.value)">
+                    
+                </div>
+            </div>
+        </div>
+        <p>Absolute length units</p>
+        <div class="length-converter">
+            <div class="fields">
+                <div class="field">
+                    <label >Centimeters:</label>
+                        <input type="number" placeholder="cm" id="inputCm" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id, this.value)">
+                </div>  
+                
+                <div class="field">
+                    <label >Millimeters:</label>
+                        <input type="number" placeholder="mm" id="inputMm" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id, this.value)">
+                </div>
+
+                <div class="field">
+                    <label >Inches:</label>
+                        <input type="number" placeholder="in" id="inputIn" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id, this.value)">
+                </div>
+
+                <div class="field">
+                    <label >Picas:</label>
+                        <input type="number" placeholder="pc" id="inputPc" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id, this.value)">
+                </div>
+
+                <div class="field">
+                    <label >Points:</label>
+                        <input type="number" placeholder="pt" id="inputPt" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id, this.value)">
+                </div>
+                
+                <div class="field">
+                    <label >Pixels:</label>
+                        <input type="number" placeholder="px" id="inputPx" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id, this.value)">
+                    
+                </div>
+            </div>
+        </div>
+     
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
